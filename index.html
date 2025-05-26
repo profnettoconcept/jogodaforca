@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jogo da Forca - Acentuação</title>
+<style>
+  body { font-family: Arial, sans-serif; text-align: center; margin: 20px; }
+  #tela-inicial, #jogo { max-width: 600px; margin: auto; }
+  #boneco { font-size: 60px; margin: 20px 0; transition: transform 0.5s ease; }
+  #palavra { font-size: 32px; letter-spacing: 10px; margin: 20px; }
+  #letras { margin: 15px 0; }
+  button.letra { margin: 3px; padding: 10px 15px; font-size: 18px; cursor: pointer; }
+  button.letra:disabled { background: #ccc; cursor: not-allowed; }
+  #message { font-size: 20px; margin: 15px 0; min-height: 40px; }
+  #dica, #explicacao { font-size: 16px; margin: 10px 0; min-height: 40px; }
+  #restart { margin-top: 20px; padding: 10px 20px; font-size: 18px; display: none; cursor: pointer; }
+  #fase-info { font-weight: bold; font-size: 18px; margin-bottom: 10px; }
+  #placar { font-size: 18px; margin: 10px; }
+  #nome-jogador { padding: 8px; font-size: 16px; width: 200px; }
+  #btn-iniciar { padding: 10px 20px; font-size: 18px; cursor: pointer; }
+  #tela-inicial { margin-top: 100px; }
+</style>
+</head>
+<body>
+
+<div id="tela-inicial">
+  <h1>Jogo da Forca - Acentuação Gráfica</h1>
+  <p>Digite seu nome para começar:</p>
+  <input type="text" id="nome-jogador" placeholder="Seu nome aqui" />
+  <br /><br />
+  <button id="btn-iniciar">Iniciar Jogo</button>
+</div>
+
+<div id="jogo" style="display:none;">
+  <div id="fase-info"></div>
+  <div id="placar">Placar: <span id="pontos">0</span> / 100</div>
+  <div id="boneco">🙂</div>
+  <div id="palavra"></div>
+  <div id="dica"></div>
+  <div id="letras"></div>
+  <div id="message"></div>
+  <div id="explicacao"></div>
+  <button id="restart">Reiniciar Fase</button>
+</div>
+
+<audio id="som-nao" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
+
