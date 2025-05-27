@@ -1,35 +1,23 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   text-align: center;
-  background-color: #ADD8E6;
-  transition: background-color 0.5s;
 }
 
-#boneco-container {
-  position: relative;
-  height: 150px;
-  margin-bottom: 20px;
+h1, h2 {
+  font-family: 'Press Start 2P', cursive;
+  color: #333;
 }
 
-#boneco {
-  font-size: 50px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: transform 0.5s;
-}
-
-#buraco {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 40px;
-}
-
-button {
+#letras button {
   margin: 5px;
   padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
+}
+
+#boneco img {
+  transition: transform 0.3s ease;
+}
+
+#game {
+  margin-top: 50px;
 }
